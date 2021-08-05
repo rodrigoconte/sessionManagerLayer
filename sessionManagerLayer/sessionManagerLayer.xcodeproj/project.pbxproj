@@ -13,6 +13,10 @@
 		D5E130B426BC15D000DE4A6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E130B326BC15D000DE4A6E /* Preview Assets.xcassets */; };
 		D5E130BE26BC160300DE4A6E /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E130BD26BC160300DE4A6E /* KeychainConfiguration.swift */; };
 		D5E130C026BC197D00DE4A6E /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E130BF26BC197D00DE4A6E /* KeychainItem.swift */; };
+		D5E130C326BC23AE00DE4A6E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E130C226BC23AE00DE4A6E /* SessionManager.swift */; };
+		D5E130C626BC25A000DE4A6E /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E130C526BC25A000DE4A6E /* Session.swift */; };
+		D5E130CD26BC261300DE4A6E /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E130CC26BC261300DE4A6E /* SessionData.swift */; };
+		D5E130CF26BC263100DE4A6E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E130CE26BC263100DE4A6E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		D5E130B526BC15D000DE4A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5E130BD26BC160300DE4A6E /* KeychainConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
 		D5E130BF26BC197D00DE4A6E /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		D5E130C226BC23AE00DE4A6E /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		D5E130C526BC25A000DE4A6E /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		D5E130CC26BC261300DE4A6E /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
+		D5E130CE26BC263100DE4A6E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,11 @@
 		D5E130AB26BC15CD00DE4A6E /* sessionManagerLayer */ = {
 			isa = PBXGroup;
 			children = (
+				D5E130C726BC25B900DE4A6E /* Scenes */,
+				D5E130C126BC23A100DE4A6E /* SessionManager */,
 				D5E130BC26BC15F600DE4A6E /* Keychain */,
 				D5E130BB26BC15E200DE4A6E /* Resources */,
-				D5E130AC26BC15CD00DE4A6E /* sessionManagerLayerApp.swift */,
-				D5E130AE26BC15CD00DE4A6E /* ContentView.swift */,
+				D5E130C426BC252000DE4A6E /* Example */,
 				D5E130B226BC15D000DE4A6E /* Preview Content */,
 			);
 			path = sessionManagerLayer;
@@ -89,6 +98,49 @@
 				D5E130BF26BC197D00DE4A6E /* KeychainItem.swift */,
 			);
 			path = Keychain;
+			sourceTree = "<group>";
+		};
+		D5E130C126BC23A100DE4A6E /* SessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				D5E130C226BC23AE00DE4A6E /* SessionManager.swift */,
+			);
+			path = SessionManager;
+			sourceTree = "<group>";
+		};
+		D5E130C426BC252000DE4A6E /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				D5E130CB26BC25FC00DE4A6E /* Models */,
+				D5E130C826BC25E500DE4A6E /* SessionAbstraction */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		D5E130C726BC25B900DE4A6E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D5E130AC26BC15CD00DE4A6E /* sessionManagerLayerApp.swift */,
+				D5E130AE26BC15CD00DE4A6E /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D5E130C826BC25E500DE4A6E /* SessionAbstraction */ = {
+			isa = PBXGroup;
+			children = (
+				D5E130C526BC25A000DE4A6E /* Session.swift */,
+			);
+			path = SessionAbstraction;
+			sourceTree = "<group>";
+		};
+		D5E130CB26BC25FC00DE4A6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5E130CC26BC261300DE4A6E /* SessionData.swift */,
+				D5E130CE26BC263100DE4A6E /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +214,11 @@
 			files = (
 				D5E130C026BC197D00DE4A6E /* KeychainItem.swift in Sources */,
 				D5E130AF26BC15CD00DE4A6E /* ContentView.swift in Sources */,
+				D5E130CD26BC261300DE4A6E /* SessionData.swift in Sources */,
+				D5E130C626BC25A000DE4A6E /* Session.swift in Sources */,
+				D5E130CF26BC263100DE4A6E /* User.swift in Sources */,
 				D5E130AD26BC15CD00DE4A6E /* sessionManagerLayerApp.swift in Sources */,
+				D5E130C326BC23AE00DE4A6E /* SessionManager.swift in Sources */,
 				D5E130BE26BC160300DE4A6E /* KeychainConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
